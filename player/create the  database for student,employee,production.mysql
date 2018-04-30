@@ -1,0 +1,38 @@
+create database student;
+use student;
+create table details(
+last_name VARCHAR(25),
+first_name VARCHAR(25),
+roll_no  VARCHAR(8),
+cgpa    int
+);
+select* from details;
+desc details;
+show databases;
+drop table  details first_name;
+
+create database employee;
+use employee;
+create table information(
+last_name VARCHAR(25),
+first_name VARCHAR(25),
+company_name  VARCHAR(25),
+age int
+);
+select* from information;
+desc information;
+show databases;
+
+create database production;
+use production;
+create table detail 1(
+last_name VARCHAR(25),
+first_name VARCHAR(25),
+company_name  VARCHAR(25),
+age int
+);
+select* from detail 1;
+desc detail 1;
+show databases;
+ALTER table detail 1 drop column first_name;
+
