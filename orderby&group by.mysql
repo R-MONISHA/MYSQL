@@ -1,0 +1,16 @@
+create table student
+(
+first_name VARCHAR(25),
+last_name VARCHAR(25),
+suffix VARCHAR(10),
+gender VARCHAR(1),
+age int
+);
+INSERT into student values ('moni','nisha','miss','f',20);
+INSERT into student values ('moi','sha','mr','m',21);
+INSERT into student values ('mon','nia','miss','f',20);
+select distinct (age) from student;
+SELECT count(*) FROM student;
+SELECT last_name FROM student ORDER BY last_name asc;
+SELECT  first_name FROM student  ORDER BY first_name desc;
+SELECT COUNT(gender) FROM student GROUP BY gender;
