@@ -1,0 +1,23 @@
+create database school;
+use school;
+create table student
+(
+first_name VARCHAR(25),
+last_name VARCHAR(25),
+suffix VARCHAR(10),
+gender VARCHAR(1),
+age int
+);
+INSERT into student values (' moni ',' nisha ','miss','f',20);
+INSERT into student values (' sai ', 'sha ','mr','m',21);
+INSERT into student values (' nivi ',' nia ','miss','f',20);
+SELECT CONCAT(first_name, '  ',last_name) as full_name from student;
+SELECT length(first_name) as full_name from student;
+SELECT length(concat(first_name,last_name)) as full_name from student;
+SELECT lower(first_name) as full_name from student;
+SELECT ucase(first_name) as full_name from student;
+SELECT upper(first_name) as full_name from student;
+
+SELECT ltrim(first_name) as full_name from student;
+SELECT mid(first_name,1,2) as full_name from student;
+SELECT reverse(first_name) as full_name from student;
