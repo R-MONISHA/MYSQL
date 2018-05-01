@@ -1,0 +1,19 @@
+create database school;
+use school;
+create table student
+(
+first_name VARCHAR(25),
+last_name VARCHAR(25),
+suffix VARCHAR(10),
+gender VARCHAR(1),
+age int
+);
+INSERT into student values ('moni','nisha','miss','f',20);
+INSERT into student values ('mi','sha','mr','m',21);
+INSERT into student values ('mon','nia','miss','f',10);
+
+select * from student where age<=20 and first_name='moni';
+select * from student where age<=20 or first_name='moni';
+select * from student where first_name like '%n%';
+select * from student where first_name not like '%n%';
+select * from student where gender in ('m','f');
