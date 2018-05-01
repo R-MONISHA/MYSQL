@@ -1,0 +1,11 @@
+create database company;
+use company;
+create table  employee
+(
+ id int,
+ last_name VARCHAR(25),
+first_name VARCHAR(25),
+age int,
+PRIMARY KEY(id)
+);
+desc employee;
