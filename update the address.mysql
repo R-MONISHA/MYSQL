@@ -1,0 +1,18 @@
+create database company;
+use company;
+create table employee 
+(
+name VARCHAR(25),
+age int,
+address VARCHAR(40),
+salary int
+);
+INSERT into employee values('Ramesh',32,'Ahmedabad',2000);
+INSERT into employee values('Khilan',25,'Delhi', 1500);
+INSERT into employee values('kaushik',23,'Kota',2000);
+INSERT into employee values('Chaitali',25,'Mumbai',6500);
+INSERT into employee values('Hardik',27,'Bhopal',8500);
+INSERT into employee values('Komal',22,'MP',4500);
+INSERT into employee values('Muffy',24,'Indore',10000);
+update employee SET address='maharastra' where name='komal';
+select * from employee;
