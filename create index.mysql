@@ -1,0 +1,8 @@
+create database information;
+use information;
+create table guvi
+(
+name VARCHAR(25)
+);
+CREATE INDEX index_name on guvi (name);
+desc guvi;
