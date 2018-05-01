@@ -1,0 +1,10 @@
+create database company;
+use company;
+create table employee
+(
+ID int NOT NULL auto_increment,
+name VARCHAR(25),
+age int,
+PRIMARY KEY (id)
+);
+desc employee;
